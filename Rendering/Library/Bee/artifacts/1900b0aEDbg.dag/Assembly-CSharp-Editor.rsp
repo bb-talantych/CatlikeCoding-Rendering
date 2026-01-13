@@ -368,6 +368,7 @@
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/UnityEngine.UI.ref.dll"
 -analyzer:"D:/programs/Unity Editors/2022.3.7f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"D:/programs/Unity Editors/2022.3.7f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
+"Assets/Props/Scripts/Editor/MyBaseShaderGUI.cs"
 "Assets/Props/Scripts/Editor/MyCatlikeCodingShaderGUI.cs"
 "Assets/Props/Scripts/Editor/MyCatlikeCodingShaderGUI2.cs"
 "Assets/Props/Scripts/Editor/MyCatlikeCodingShaderGUI3.cs"
@@ -375,6 +376,8 @@
 "Assets/Props/Scripts/Editor/MyCatlikeCodingShaderGUI5.cs"
 "Assets/Props/Scripts/Editor/MyCatlikeCodingShaderGUI6.cs"
 "Assets/Props/Scripts/Editor/MyCatlikeCodingShaderGUI7.cs"
+"Assets/Props/Scripts/Editor/MyCatlikeCodingShaderGUI8.cs"
+"Assets/Props/Scripts/Editor/MyTriplanarShaderGUI.cs"
 -langversion:9.0
 
 /deterministic

@@ -11,7 +11,8 @@ Material:
   m_Shader: {fileID: 4800000, guid: c703356418f2f2046967aacacbf5bc0a, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
+  m_ValidKeywords:
+  - _SEPARATE_TOP_MAPS
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -48,7 +49,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MOHSMap:
-        m_Texture: {fileID: 2800000, guid: 8407572acd47f674b9d04f7066a852bb, type: 3}
+        m_Texture: {fileID: 2800000, guid: 16bfd5e1ff158b94f90bd9cc7aa573b5, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MOSMap:
@@ -56,7 +57,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 83ffeae43b7e99241b32b2b87cde8ee7, type: 3}
+        m_Texture: {fileID: 2800000, guid: cef7e0825fb01954bbb29ac8dd85039c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -68,7 +69,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMap:
-        m_Texture: {fileID: 2800000, guid: c8a9a0dc5a920134cbb2fea77c2fdcd0, type: 3}
+        m_Texture: {fileID: 2800000, guid: 7da34b2e3a9e92c4f882174be3fb766d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -79,11 +80,23 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _TopMOHSMap:
+        m_Texture: {fileID: 2800000, guid: 8407572acd47f674b9d04f7066a852bb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TopMainTex:
+        m_Texture: {fileID: 2800000, guid: 83ffeae43b7e99241b32b2b87cde8ee7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TopNormalMap:
+        m_Texture: {fileID: 2800000, guid: c8a9a0dc5a920134cbb2fea77c2fdcd0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _BlendExponent: 4
-    - _BlendHeightStrength: 0.35
-    - _BlendOffset: 0.375
+    - _BlendExponent: 8
+    - _BlendHeightStrength: 0.6
+    - _BlendOffset: 0.45
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailBumpScale: 1

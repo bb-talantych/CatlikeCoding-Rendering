@@ -6,6 +6,7 @@
 	#include "My Lighting Input.cginc"
 
 	// it's not included in "My Lighting Input.cginc"
+	sampler2D _TopMainTex, _TopMOHSMap, _TopNormalMap;
 	sampler2D _MOHSMap;
 	float _MapScale;
 	float _BlendOffset, _BlendExponent, _BlendHeightStrength;
@@ -78,8 +79,18 @@
 		float4 mohsZ = tex2D(_MOHSMap, triUV.z);
 
 		float3 tangentNormalX = UnpackNormal(tex2D(_NormalMap, triUV.x));
-		float3 tangentNormalY = UnpackNormal(tex2D(_NormalMap, triUV.y));
+		float4 rawNormalY = tex2D(_NormalMap, triUV.y);
 		float3 tangentNormalZ = UnpackNormal(tex2D(_NormalMap, triUV.z));
+
+		#if defined(_SEPARATE_TOP_MAPS)
+		if (parameters.normal.y > 0) 
+		{
+			albedoY = tex2D(_TopMainTex, triUV.y).rgb;
+			mohsY = tex2D(_TopMOHSMap, triUV.y);
+			rawNormalY = tex2D(_TopNormalMap, triUV.y);
+		}
+		#endif
+		float3 tangentNormalY = UnpackNormal(rawNormalY);
 
 		// adjusting the normals
 		if (parameters.normal.x < 0) 
